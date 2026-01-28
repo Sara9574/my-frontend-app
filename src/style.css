@@ -1,17 +1,5 @@
-.box{
-    width: clamp(80px, 10vw, 140px);
-    aspect-ratio: 1/1;
-    background-color: #ca88dd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.container{
+  display: grid;
 }
 
 .navbar{
@@ -39,4 +27,16 @@
 
 .logo{
     color: rgb(255, 255, 255);
+    animation: animate 2s linear 0 infinite alternate alternate;
+}
+
+
+
+@keyframes animate {
+     0% {
+         transform: rotate(60deg) scale(0.8);
+    }
+     25% {
+         transform: rotate(90deg) scale(1.2);
+    }
 }
